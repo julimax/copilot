@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pokedex</h1>
+    <input type="text" id="searchInput" placeholder="Search Pokemon">
+              <button id="searchButton">Search</button>
+              </header>
+              <main>
+                <div id="pokedex"></div>
+              </main>
+              <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  document.getElementById("searchButton").addEventListener("click", search);
+                });
+
+                function search() {
+                  // Get the search input value
+                  var searchInput = document.getElementById("searchInput").value;
+
+                  // Perform the search logic here
+                  // For example, you can make an API call to retrieve the Pokemon data based on the search input
+
+                  // Display the search results
+                  var pokedex = document.getElementById("pokedex");
+                  pokedex.innerHTML = "Search results for: " + searchInput;
+                }
+              </script>
+            </header>
+          </body>
+        </html>
+        </body>
+    </html>
+    </body>
+    </html>
+    </script>
+  </header>
+  <main>
+    <div id="pokedex"></div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
