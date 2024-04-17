@@ -10,17 +10,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - name: Run HTMLProofer
+      uses: chabad360/htmlproofer@v2
       with:
-        python-version: '3.x'
-
-    - name: Install Dependencies
-      run: |
-        ls
-        python -m pip install --upgrade pip
-        pip install html5validator
-
-    - name: Validate HTML
-      run: |
-        html5validator --root . --match "pokedex/**/*.html"
+        directory: "./pokedex"
