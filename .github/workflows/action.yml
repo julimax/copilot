@@ -9,3 +9,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: HTML Lint
+      uses: CyberZHG/html-lint@master
+      with:
+        args: "**/*.html"
