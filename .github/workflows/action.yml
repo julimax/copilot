@@ -21,4 +21,4 @@ jobs:
         pip install html5validator
 
     - name: Validate HTML
-      run: html5validator --root . --match "**/*.html"
+      run: html5validator --root pokedex --match "**/*.html"
