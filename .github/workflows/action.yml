@@ -23,4 +23,4 @@ jobs:
 
     - name: Validate HTML
       run: |
-        run: html5validator --root . --match "pokedex/**/*.html"
+        html5validator --root . --match "pokedex/**/*.html"
