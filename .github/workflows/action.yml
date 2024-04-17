@@ -11,6 +11,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: HTML Lint
-      uses: CyberZHG/html-lint@master
+      uses: w3c/markup-validator-action@v1
       with:
         args: "**/*.html"
